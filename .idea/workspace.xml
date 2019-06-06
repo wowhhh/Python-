@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28542691-ffaa-49eb-81df-d5ccd64e4f13" name="Default Changelist" comment="" />
+    <list default="true" id="28542691-ffaa-49eb-81df-d5ccd64e4f13" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/10_set_集合_内置数据结构-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_set_集合_内置数据结构.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,6 +47,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -54,7 +59,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559746946364</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="2019--06-06 list完成，元祖tuple开始 ByWyb">
+      <created>1559831948974</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559831948974</updated>
+    </task>
+    <task id="LOCAL-00010" summary="2019--06-06 list完成，元祖tuple开始 ByWyb">
+      <created>1559833417251</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1559833417251</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -216,8 +234,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5014881" side_tool="true" visible="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4985119" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50223213" side_tool="true" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49776787" visible="true" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -226,18 +244,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2019--06-02 list ByWyb" />
     <MESSAGE value="2019--06-02 list完成 ByWyb" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019--06-02 list完成 ByWyb" />
+    <MESSAGE value="2019--06-06 list完成，元祖tuple开始 ByWyb" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019--06-06 list完成，元祖tuple开始 ByWyb" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/08_内置数据结构list.ipynb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BasicCode/basic01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/08_内置数据结构list.ipynb" />
+    <entry file="file://$PROJECT_DIR$/BasicCode/basic01.py" />
   </component>
 </project>
