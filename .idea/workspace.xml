@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28542691-ffaa-49eb-81df-d5ccd64e4f13" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/08_list_内置数据结构-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/08_list_内置数据结构-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_list_内置数据结构.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/08_list_内置数据结构.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="28542691-ffaa-49eb-81df-d5ccd64e4f13" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559745246699</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2019--06-02 list完成 ByWyb">
+      <created>1559746375271</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559746375271</updated>
+    </task>
+    <task id="LOCAL-00008" summary="2019--06-02 list完成 ByWyb">
+      <created>1559746946364</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559746946364</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
