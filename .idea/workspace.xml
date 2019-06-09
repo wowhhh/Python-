@@ -230,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559833998223</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2019--06-06 元组tuple完成，集合set开始 ByWyb">
+      <created>1560067184828</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1560067184828</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
