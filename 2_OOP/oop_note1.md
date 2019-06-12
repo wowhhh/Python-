@@ -41,3 +41,31 @@
   - 类由属性和方法构成，其他不允许出现
   - 成员属性定义可以直接使用变量赋值，如果没有值，可以使用None
   - 案例 OOP_01.py
+- 实例化类
+
+          变量 = 类名（） # 实例化一个对象
+- 访问对象成员
+  - 使用 . 操作符
+
+          obj.成员属性名称
+          obj.成员方法
+  - 可以通过默认内置变量检查类和对象的所有成员
+    - 对象的所有成员检测
+
+           # dict前后各有两个下划线
+           obj._dict_
+    - 类所有的成员
+
+           # dict 前后各有两个下划线
+# 3：补充anaconda
+- anaconda主要是一个虚拟环境管理器
+- 还是一个安装包管理器
+- cmd :启动Anaconda Powershell Promat
+- conda list:显示anaconda安装的包
+- conda env list :显示anaconda的虚拟环境列表
+- conda create -n xxx python=3.7 ：创建Python版本为3.7的anaconda虚拟环境
+- conda  activate xxx ：激活创建的acaconda虚拟环境
+- ![](assets/markdown-img-paste-20190612230410614.png)
+- conda deactivate
+- 在Pycharm中切换虚拟环境:File -> Setting -> Project -> Project Interpreter -> add -> Conda Environment 选择已经存在的环境，教程是在Anaconda安装目录下的envs下面。
+但是我的在这里![](assets/markdown-img-paste-20190612231810778.png)
