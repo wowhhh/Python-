@@ -69,3 +69,9 @@
 - conda deactivate
 - 在Pycharm中切换虚拟环境:File -> Setting -> Project -> Project Interpreter -> add -> Conda Environment 选择已经存在的环境，教程是在Anaconda安装目录下的envs下面。
 但是我的在这里![](assets/markdown-img-paste-20190612231810778.png)
+
+# 4：类与对象的成员分析
+- 类和对象都可以存储成员，成员可以归类所有，也可以归对象所有
+- 类存储成员时使用的是与类关联的一个对象。会有一个相应类对应的一个实例。
+- 独享存储成员时存储在当前对象中。
+- 对象访问一个成员的时候，如果对象中没有该成员，尝试访问类中的同名成员。如果对象中有此成员，则一定使用此成员
