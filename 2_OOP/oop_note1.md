@@ -65,13 +65,45 @@
 - conda env list :显示anaconda的虚拟环境列表
 - conda create -n xxx python=3.7 ：创建Python版本为3.7的anaconda虚拟环境
 - conda  activate xxx ：激活创建的acaconda虚拟环境
-- ![](assets/markdown-img-paste-20190612230410614.png)
+- ![切换](assets/markdown-img-paste-20190612230410614.png)
 - conda deactivate
 - 在Pycharm中切换虚拟环境:File -> Setting -> Project -> Project Interpreter -> add -> Conda Environment 选择已经存在的环境，教程是在Anaconda安装目录下的envs下面。
-但是我的在这里![](assets/markdown-img-paste-20190612231810778.png)
+但是我的在这里![虚拟环境](assets/markdown-img-paste-20190612231810778.png)
 
 # 4：类与对象的成员分析
 - 类和对象都可以存储成员，成员可以归类所有，也可以归对象所有
 - 类存储成员时使用的是与类关联的一个对象。会有一个相应类对应的一个实例。
 - 独享存储成员时存储在当前对象中。
 - 对象访问一个成员的时候，如果对象中没有该成员，尝试访问类中的同名成员。如果对象中有此成员，则一定使用此成员
+- 创建对象的时候，类中的成员不会放入对象当中，而是得到一个空对象，没有成员
+- 通过对象对类中成员重新赋值或者通过对象添加成员时，对应成员会保存在对象中，而不会修改类成员
+
+# 5：关于self
+- self在对象的方法表示当前对象本身，如果通过对象调用一个方法，那么该对象会自动传入到当前方法的第一个参数中
+- self并不是关键字，只是一个用于接受对象的普通参数，理论上可以使用任何一个普通变量名代替
+- 方法中有self形参的方法称为非绑定类的方法，可以通过对象访问，没有self的是绑定类的方法，只能通过类来访问。
+- 使用类访问绑定类的方法时候，如果类方法中需要访问当前类的成员，可以通过 __class__ 成员名来访问成员
+# 6：面向对象三大特性
+- 封装
+- 继承
+- 多态
+## 6.1：封装
+- 封装就是对对象的成员进行访问限制
+- 封装的三个级别
+  - 公开，public
+  - 受保护的，protected
+  - 私有的，private
+  - public，private，protected 不是关键字
+- 判别对象的位置
+  - 对象内部
+  - 对象外部
+  - 子类中
+- 私有
+  - 私有成员时最高级别的封装，只有在当前类或者对象中访问
+  - 在成员前面添加两个下划线即可
+![私有变量案例](assets/markdown-img-paste-20190613193030171.png)
+  - Python的私有不是真的私有，是一种成为name mangling的改名策略，可以使用对象名._classname_ attributename来访问
+  ![1](assets/markdown-img-paste-20190613193530420.png)
+  ![2](assets/markdown-img-paste-2019061319355266.png)
+## 6.2：继承
+## 6.3：多态
