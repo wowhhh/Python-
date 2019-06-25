@@ -145,30 +145,6 @@ print(t.name)  # 输出 ： wyb
   - 没有则查找父类
   - 构造函数如果本类中没有定义，则自动查找调用父类构造函数
   - 如果本类中有定义，则不继续向上查找
-- 构造函数
-  - 什么是构造函数：是一种特殊的函数，在类进行实例化之前进行调用
-```class Dog():
-    # __init__ 就是构造函数
-    # 每次实例化的时候，第一个被调用
-    # 主要工作室进行初始化
-    def __init__(self):
-        print("构造函数")
-kaka = Dog()
-```
-  - 实例化的时候，括号内的参数需要跟构造函数的参数匹配
-  - 多个构造函数以及参数不同，调用的时候有区别的
-```
-  class PaxingAni(Animal):
-    pass
-    def __init__(self):
-        print("爬行动物的构造函数")
-    def __init__(self,name):  #构造函数含有参数
-        print(name,"的构造函数")
-
-    # 调用 e = ele("wyb")
-```
-  - 自己有构造函数就用自己的，没有就向上查找
-  - 注意参数个数
 - super
   - super不是关键字，而是一个类
   - 作用是获取MRO（MethodResalustionOrder）列表中的第一个类，往往是父类
@@ -196,6 +172,67 @@ kaka = Dog()
     - MRO列表的计算原则：
       - 子类永远在父类前面
       - 如果多个父类，则根据继承语法中括号内类的书写顺序存放
-      - 如果多个类继承了同一个父类，孙子类只会选取继承语法括号中第一个父类的父类
-      
+      - 如果多个类继承了同一个父类，孙子类只会选取继承语法括号中第一个父类的父类（应该可以理解成，按照顺序进行选择，第一个）
+### 6.2.1 构造函数  
+- 什么是构造函数：是一种特殊的函数，在类进行实例化之前进行调用，通常此函数用来对对象进行初始化
+```class Dog():
+  # __init__ 就是构造函数
+  # 每次实例化的时候，第一个被调用
+  # 主要工作室进行初始化
+  def __init__(self):
+      print("构造函数")
+kaka = Dog()
+```
+- 实例化的时候，括号内的参数需要跟构造函数的参数匹配
+```
+class PaxingAni(Animal):
+  pass
+  def __init__(self,name):  #构造函数含有参数
+      print(name,"的构造函数")
+
+  # 调用 e = ele("wyb")
+```
+- 构造函数的调用顺序
+  - 自己有构造函数就用自己的，没有就向上查找
+- 一个class中可以存着多个构造函数么？
+      ![不可以！！！！](assets/markdown-img-paste-20190625181146299.png)
+- 子类如果拓展父类中的构造函数
+  - 第一种  ![第一种](assets/markdown-img-paste-20190625182238708.png)
+  - 第二章  ![第二种](assets/markdown-img-paste-20190625182804768.png)
+
 ## 6.3：多态
+- 多态就是同一个对象在不同情况下有不同的状态出现
+- 多态不是语法，是一种设计思想
+- 多态性：一种调用方式，不同的执行效果
+- 多态：同一事物的多种形态，动物分为人类，狗类，猪类
+- 区分多态与多态性 参考文章]https://www.cnblogs.com/luchuangao/p/6739557.html
+### Mixin设计模式
+  - 主要采用多继承方式对类的功能进行拓展
+  - [Minxin概念]https://www.zhihu.com/question/20778853
+  - [MRO and Mixin]http://blog.csdn.net/robinjwong/article/details/48375833
+  - [Mixin模式]https://www.cnblogs.com/xybaby/p/6484262.html
+  - [Mixin MRO]http://runforever.github.io/2014-07-19/2014-07-19-python-mixin%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
+  - [MRO]http://xiaocong.github.io/blog/2012/06/13/python-mixin-and-mro/
+- 我们使用多继承语法来实现Minxin
+- 使用Mixin实现多继承的时候非常小心
+  - 首先他必须表示某一个单一功能，而不是某个物品
+  - 职责必须单一，如果有多个功能，则写多个Mixin
+  - Mixin不能依赖于子类的实现
+  - 子类即使没有继承这个Mixin类，也能照常工作，只是缺少了某个功能
+- 优点
+  - 使用Mixin可以在不对类进行任何修改的情况下，扩充功能
+  - 可以方便的组织和维护不同功能组件的划分
+  - 可以根据需要任意调整功能类的组合
+  - 可以避免创建很多新的类，导致类的继承混乱
+- 案例代码在OOP_05
+
+## 7：类相关函数
+- issuclass： 检测一个类是不是另一个类的子类，返回值是True或者False；所有的类都是object的子类
+- isinstance:检测一个对象是不是一个类的实例
+- hasattr ： 检测一个对象是否有成员xxx
+- getattr : 获取属性值
+- setattr : 设置属性值
+- delattr : 删除属性值
+- dir ： 获取对象的成员列表
+- 如果不知道方法用法，记得使用help ，例如：help(setattr)
+![help(setattr)](assets/markdown-img-paste-20190625191423957.png)

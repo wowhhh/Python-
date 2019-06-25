@@ -1,0 +1,92 @@
+'''
+构造函数实例
+'''
+class Person():
+    # 对Person类进行实例化的时候
+    # 姓名要确定
+    # 年龄要确定
+    # 地址要确定
+
+    def __init__(self,name,age,address):
+        self.name = name
+        self.age = age
+        self.address = address
+        print("含有三个参数的构造函数")
+# 实例化一个人
+#p = Person()  # TypeError: __init__() missing 3 required positional arguments: 'name', 'age', and 'address'
+# 定义两个构造函数，使用参数少的哪个出现上述报错，是不是Python只能存在一个构造函数，原因就是因为不可以存在多个
+#p2 = Person("wyb",19,"henan")
+
+# 构造函数的调用顺序
+class A():
+    def __init__(self):
+        print("A")
+class B(A):
+    def __init__(self,name):
+        print(name,"+B")
+
+class C(B):
+    # c想拓展B中的构造函数
+    # 也就是调用B的构造函数后再添加一些功能，有两种实现方法
+    #第一种是通过父类名来调用
+    '''
+    def __init__(self,name):
+        B.__init__(self,name)  # 首先调用父类中的构造函数
+        print("这是C中附加的功能") # 然后添加自己的功能
+    '''
+    # 第二章是super调用
+    def __init__(self,name):
+        # 首先是调用父类
+        super(C, self).__init__(name)
+        # 然后增加自己的功能
+        print("这是C中附加的功能")
+c = C("我是C")
+
+'''Mixin 案例'''
+# *********************没有使用Mixin
+class Person():
+    name = "wyb"
+    age = 18
+    def eat(self):
+        print("吃。。。")
+    def drink(self):
+        print("喝。。。")
+    def sleep(self):
+        print("睡。。。")
+
+class Teacher(Person):
+    def work(self):
+        print("工作")
+
+class Student(Person):
+    def study(self):
+        print("学习")
+
+class Tutor(Teacher,Student):
+    pass
+
+t = Tutor()
+print(Tutor.__mro__)
+# (<class '__main__.Tutor'>, <class '__main__.Teacher'>, <class '__main__.Student'>, <class '__main__.Person'>, <class 'object'>)
+print(t.__dict__) #{}
+print(Tutor.__dict__)  # {'__module__': '__main__', '__doc__': None}
+# *********************没有使用Mixin
+
+# *********************使用Mixin
+class TeacherMixin():
+    def work(self):
+        print("工作")
+class StudentMixin():
+    def study(self):
+        print("学习")
+class TutorM(Person,TeacherMixin,StudentMixin):
+    pass
+
+tt = TutorM()
+print(TutorM.__mro__)
+# (<class '__main__.TutorM'>, <class '__main__.Person'>, <class '__main__.TeacherMixin'>, <class '__main__.StudentMixin'>, <class 'object'>)
+print(tt.__dict__) # {}
+print(TutorM.__dict__) # {'__module__': '__main__', '__doc__': None}
+
+
+help(setattr)
