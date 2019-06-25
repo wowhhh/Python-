@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28542691-ffaa-49eb-81df-d5ccd64e4f13" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/2_OOP/OOP_04.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_OOP/OOP_03.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_OOP/OOP_03.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2_OOP/oop_note1.md" beforeDir="false" afterPath="$PROJECT_DIR$/2_OOP/oop_note1.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,10 +15,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2_OOP/OOP_03.py">
+        <entry file="file://$PROJECT_DIR$/2_OOP/OOP_04.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="57" selection-start-line="57" selection-end-line="57" selection-end-column="14" />
+            <state relative-caret-position="166">
+              <caret line="12" column="103" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -44,6 +44,7 @@
         <option value="$PROJECT_DIR$/2_OOP/OOP_01.py" />
         <option value="$PROJECT_DIR$/2_OOP/OOP_02.py" />
         <option value="$PROJECT_DIR$/2_OOP/OOP_03.py" />
+        <option value="$PROJECT_DIR$/2_OOP/OOP_04.py" />
       </list>
     </option>
   </component>
@@ -97,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.OOP_03">
+  <component name="RunManager" selected="Python.OOP_04">
     <configuration name="Unnamed" type="CompoundRunConfigurationType">
       <method v="2" />
     </configuration>
@@ -164,6 +165,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="OOP_04" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonLearnNote" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2_OOP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_OOP/OOP_04.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PythonLearnNote" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -213,9 +235,11 @@
       <item itemvalue="Python.OOP_02" />
       <item itemvalue="Python.basic01" />
       <item itemvalue="Python.OOP_03" />
+      <item itemvalue="Python.OOP_04" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.OOP_04" />
         <item itemvalue="Python.OOP_03" />
         <item itemvalue="Python.OOP_02" />
         <item itemvalue="Python.OOP_01" />
@@ -374,24 +398,31 @@
       <option name="project" value="LOCAL" />
       <updated>1561426847177</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="面向对象">
+      <created>1561432599070</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1561432599070</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49479166" visible="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49702382" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4940476" weight="0.3295082" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4955357" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5052083" side_tool="true" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50446427" side_tool="true" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49925596" weight="0.3295082" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49479166" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -436,6 +467,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="57" selection-start-line="57" selection-end-line="57" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_OOP/OOP_04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="12" column="103" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="103" />
         </state>
       </provider>
     </entry>
