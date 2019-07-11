@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28542691-ffaa-49eb-81df-d5ccd64e4f13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2_OOP/OOP_05" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_OOP/OOP_06.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2_OOP/oop_note1.md" beforeDir="false" afterPath="$PROJECT_DIR$/2_OOP/oop_note1.md" afterDir="false" />
     </list>
@@ -15,19 +15,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2_OOP/OOP_05">
+        <entry file="file://$PROJECT_DIR$/2_OOP/OOP_06.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2_OOP/OOP_04.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            <state relative-caret-position="116">
+              <caret line="58" column="3" lean-forward="true" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -56,6 +47,8 @@
         <option value="$PROJECT_DIR$/2_OOP/OOP_04.py" />
         <option value="$PROJECT_DIR$/2_OOP/OOP_05.py" />
         <option value="$PROJECT_DIR$/2_OOP/OOP_05" />
+        <option value="$PROJECT_DIR$/06_str.ipynb" />
+        <option value="$PROJECT_DIR$/2_OOP/OOP_06.py" />
       </list>
     </option>
   </component>
@@ -73,6 +66,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,12 +83,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MLWued" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -109,29 +102,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.OOP_05">
+  <component name="RunManager" selected="Python.OOP_06">
     <configuration name="Unnamed" type="CompoundRunConfigurationType">
-      <method v="2" />
-    </configuration>
-    <configuration name="OOP_01" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonLearnNote" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2_OOP" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_OOP/OOP_01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="OOP_02" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -218,6 +190,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="OOP_06" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonLearnNote" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2_OOP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_OOP/OOP_06.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PythonLearnNote" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,19 +235,19 @@
     <list>
       <item itemvalue="Compound.Unnamed" />
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.OOP_01" />
       <item itemvalue="Python.OOP_02" />
       <item itemvalue="Python.OOP_03" />
       <item itemvalue="Python.OOP_04" />
       <item itemvalue="Python.OOP_05" />
+      <item itemvalue="Python.OOP_06" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.OOP_06" />
         <item itemvalue="Python.OOP_05" />
         <item itemvalue="Python.OOP_04" />
         <item itemvalue="Python.OOP_03" />
         <item itemvalue="Python.OOP_02" />
-        <item itemvalue="Python.OOP_01" />
       </list>
     </recent_temporary>
   </component>
@@ -430,25 +423,31 @@
       <option name="project" value="LOCAL" />
       <updated>1561455421170</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="面向对象差两节，Mixin设计模式需要回顾">
+      <created>1561461359704</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1561461359704</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49181548" visible="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49479166" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49181548" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49330357" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50818455" side_tool="true" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5066964" side_tool="true" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" weight="0.3295082" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49925596" weight="0.3295082" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49479166" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -466,7 +465,8 @@
     <MESSAGE value="2019--06-13 面向对象开始 02 ByWyb" />
     <MESSAGE value="2019--06-13 面向对象开始 03 ByWyb" />
     <MESSAGE value="面向对象" />
-    <option name="LAST_COMMIT_MESSAGE" value="面向对象" />
+    <MESSAGE value="面向对象差两节，Mixin设计模式需要回顾" />
+    <option name="LAST_COMMIT_MESSAGE" value="面向对象差两节，Mixin设计模式需要回顾" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/08_内置数据结构list.ipynb" />
@@ -493,10 +493,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2_OOP/OOP_05.py">
+    <entry file="file://$PROJECT_DIR$/2_OOP/OOP_05.py" />
+    <entry file="file://$PROJECT_DIR$/2_OOP/test" />
+    <entry file="file://$PROJECT_DIR$/2_OOP/oop_note1.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="275">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -507,20 +509,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2_OOP/test">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2_OOP/oop_note1.md">
+    <entry file="file://$PROJECT_DIR$/06_str.ipynb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
+        <state relative-caret-position="-300" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2_OOP/OOP_05">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+        <state relative-caret-position="2275">
+          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_OOP/OOP_06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="58" column="3" lean-forward="true" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
         </state>
       </provider>
     </entry>
