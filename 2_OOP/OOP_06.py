@@ -62,3 +62,28 @@ print(p2.age)
 print(Person.__dict__)
 print(Person.__doc__)
 print(Person.__name__)
+print(Person.__bases__) # (<class 'object'>,)
+
+'''
+init举例
+'''
+class A():
+    def __init__(self, name = 0):
+        print('ok')
+    def  __call__(self):
+        print("call 函数调用")
+    def __str__(self):
+        return "str函数调用"
+a = A() #此处调用构造函数
+
+'''
+call 举例
+'''
+a() # 当A类中没有call函数却把a对象当作函数来使用的时候 此处会出现问题， TypeError: 'A' object is not callable
+# 解决方法就是在A类里面添加call函数
+
+'''
+str 举例
+'''
+print(a) # 直接如此打印 <__main__.A object at 0x000002D198950F60>
+# 但是在A类里面加入__str__函数之后，就会打印出函数return的内容
