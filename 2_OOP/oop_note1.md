@@ -226,7 +226,7 @@ class PaxingAni(Animal):
   - 可以避免创建很多新的类，导致类的继承混乱
 - 案例代码在OOP_05
 
-## 7：类相关函数
+# 7：类相关函数
 - issuclass： 检测一个类是不是另一个类的子类，返回值是True或者False；所有的类都是object的子类
 - isinstance:检测一个对象是不是一个类的实例
 - hasattr ： 检测一个对象是否有成员xxx
@@ -237,7 +237,7 @@ class PaxingAni(Animal):
 - 如果不知道方法用法，记得使用help ，例如：help(setattr)
 ![help(setattr)](assets/markdown-img-paste-20190625191423957.png)
 
-## 8：类的成员描述符（属性）
+# 8：类的成员描述符（属性）
 - 类的成员描述符是为了在类中个对类的成员属性进行相关操作而创建的一种方式
   - get：获取属性的操作
   - set：修改或者添加
@@ -253,7 +253,7 @@ class PaxingAni(Animal):
   - 类的方式：适合多个类中的多个属性共用一个描述符
   - property：在当前类中使用，可以控制一个类中多个属性
   - 属性修饰符：使用于当前类，控制一个类中的一个属性
-## 9：类的内置属性
+# 9：类的内置属性
   ```
     __dict__ : 以字典的方式显示类的成员组成
     __doc__  : 获取类的帮助文档信息
@@ -261,10 +261,93 @@ class PaxingAni(Animal):
     __bases__: 获取某个类的所有父类，以元祖的方式显示
 
   ```
-## 10：类的常用魔法方法
+# 10：类的常用魔法方法
 - 魔术方法就是不需要人为调用的方法，基本是在特定的时刻自动触发。
 - 魔术方法的同一特征，方法名被前后各两个下滑线包裹
-- ‘__init__’：构造函数
-  - ![](assets/markdown-img-paste-20190717090805995.png)
-- ‘__new__’ ：对象实例化方法，此函数较特殊，一般不需要使用
-- ‘__call__’：对象当函数使用的时候触发
+## 10.1：操作类
+  - ‘__init__’：构造函数
+    - ![](assets/markdown-img-paste-20190717090805995.png)
+  - ‘__new__’ ：对象实例化方法，此函数较特殊，一般不需要使用
+  - ‘__call__’：对象当函数使用的时候触发
+    - ![](assets/markdown-img-paste-20190717091523323.png)
+  - ‘__str__’：当对象被当做字符串使用的时候
+    - ![](assets/markdown-img-paste-20190717092142257.png)
+    - ![](assets/markdown-img-paste-20190717092158497.png)
+  - ‘__repr__’:返回字符串，与'__str__'还是有区别的。
+    - https://blog.csdn.net/sinat_41104353/article/details/79254149
+## 10.2描述符相关
+  - ‘__set__’
+  - '__get__'
+  - '__delete__'
+## 10.3属性操作相关
+  - '__getattr__'：访问一个不存在的属性时触发
+    - ![](assets/markdown-img-paste-20190717093820369.png)
+  - '__setattr__'：对成员属性进行设置的时候触发
+    - 参数：
+      - 对象：self用来获取当前对象
+      - 属性名：被设置的属性名称，以字符串形式出现
+      - 属性值：需要对属性名称设置的值
+    - 作用：进行属性设置的时候进行验证或者修改
+    - 注意：在该方法中不能对属性直接进行赋值操作，否则死循环，疯狂调用
+    - ![](assets/markdown-img-paste-20190717100822862.png)
+## 10.4：运算分类相关
+  - '__gt__' :进行大于判断的时候触发的函数
+    - 参数：
+      - self
+      - 第二个参数是第二个对象
+      - 返回值可以是任意值，推荐使用布尔值
+# 11：类和对象的三种方法
+## 实例
+- 需要实例化对象才能使用的方法，使用过程中可能需要截止对象的其他对象的方法完成
+## 静态方法
+- 不需要实例化，通过类直接访问
+- 不需要使用第一个参数表示自身或者类
+## 类方法
+- 不需要实例化
+- 类方法的第一个参数一般命名为cls,区别于self
+- 三个方法的具体区别
+  - https://www.cnblogs.com/wcwnina/p/8644892.html
+- 实例：
+  - 类：
+  ```
+  class person6:
+    # 实例方法
+    def eat(self):
+        print(self)
+        print('吃')
+    # 类方法
+    # 第一个参数一般命名为cls,区别与self
+    @classmethod
+    def play(cls):
+        print(cls)
+        print('Playing....')
+
+    #静态方法
+    # 不需要第一个参数表示自身或者类
+    @staticmethod
+    def say():
+        print("shuo....")
+  ```
+  - 调用：
+  ```
+  one1 = person6()
+  #实例方法
+  one1.eat()
+  # 类方法
+  person6.play()
+  one1.play() #也可以
+  #静态方法
+  person6.say()
+  one1.say() #也可以
+  ```
+  - 输出结果：
+  ```
+  <__main__.person6 object at 0x000001727F3D77F0>
+  吃
+  <class '__main__.person6'>
+  Playing....
+  <class '__main__.person6'>
+  Playing....
+  shuo....
+  shuo....
+  ```
